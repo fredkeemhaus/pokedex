@@ -16,7 +16,7 @@ $ yarn start
 
 ## Preview
 
-https://626ad1789da0ca0dc51fbadd--sparkling-conkies-512d3b.netlify.app/
+https://pokemon-fred.netlify.app/
 
 <p float="left">
   <img width="371" alt="스크린샷 2022-04-29 오전 2 36 55" src="https://user-images.githubusercontent.com/45518265/165814477-740c91ca-d687-478d-b059-0508e1f31ec7.png">
