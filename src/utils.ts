@@ -70,9 +70,9 @@ export const mapTypeToHex = (type?: string) => {
 };
 
 export const formatNumbering = (
-  pokemonIndex: number | string
+  pokemonIndex: number | string | undefined
 ): string => // 포켓몬의 인덱스를 받아서 #001 형태로 변
-  `#${(typeof pokemonIndex === "number"
+  `#${(typeof pokemonIndex === "number" || typeof pokemonIndex === "undefined"
     ? String(pokemonIndex)
     : pokemonIndex
   ).padStart(3, "0")}`;

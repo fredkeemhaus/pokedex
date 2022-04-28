@@ -5,7 +5,7 @@ import { Color, Type } from "../types";
 import { formatNumbering, mapColorToHex, mapTypeToHex } from "../utils";
 
 type Props = {
-  id: string;
+  id?: string;
   name?: string;
   types?: Array<Type>;
   color?: Color;
@@ -91,7 +91,7 @@ const Image = styled.img`
 const PokemonInfo: React.FC<Props> = ({ id, name, color, types }) => (
   <Base color={mapColorToHex(color?.name)}>
     <ImageWrapper>
-      <Image src="//public/assets/pocketball.svg" />
+      <Image src="/assets/pocketball.svg" />
     </ImageWrapper>
     <InfoWrapper>
       <Name>{name}</Name>
@@ -100,7 +100,7 @@ const PokemonInfo: React.FC<Props> = ({ id, name, color, types }) => (
     <TypeList>
       {types?.map(({ type }, idx) => (
         <TypeWrapper key={idx} color={mapTypeToHex(type.name)}>
-          <TypeInfo src={`/public/assets/${type.name}.svg`} />
+          <TypeInfo src={`/assets/${type.name}.svg`} />
         </TypeWrapper>
       ))}
     </TypeList>
