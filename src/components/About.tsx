@@ -94,7 +94,7 @@ const About: React.FC<Props> = ({
       <FlavorText>{flavorText}</FlavorText>
       {isLoading ? (
         <ImageWrapper>
-          <Image src="/loading.gif" />
+          <Image src="/assets/loading.gif" />
         </ImageWrapper>
       ) : (
         <>

@@ -69,7 +69,7 @@ const PocketmonList: React.FC = () => {
     <Base>
       {isLoading || isError ? (
         <LoadingWrapper>
-          <Loading src="../../public/assets/loading.gif" alt="loading" />
+          <Loading src="/assets/loading.gif" alt="loading" />
         </LoadingWrapper>
       ) : (
         <List>
