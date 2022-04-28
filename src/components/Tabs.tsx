@@ -25,6 +25,7 @@ const TabButton = styled.button<{ active?: boolean; color: string }>`
   border: none;
   font-size: 16px;
   color: ${({ active, color }) => (active ? color : "#6B7280")};
+  cursor: pointer;
 `;
 
 interface Props {
