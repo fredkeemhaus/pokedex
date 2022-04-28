@@ -26,7 +26,6 @@ const TabsWrapper = styled.div`
 `;
 
 const DetailPage: React.FC = () => {
-  console.log(useParams());
   const { id } = useParams<Params>();
   const [selectedTab, setSelectedTab] = useState<Tab>("about");
 
@@ -99,12 +98,7 @@ const DetailPage: React.FC = () => {
         />
       )}
       {selectedTab === "evolution" && (
-        <Evolution
-          id={id}
-          isLoading={pokemonResult.isLoading || pokemonResult.isLoading}
-          color={color}
-          url={evolutionChainUrl}
-        />
+        <Evolution color={color} url={evolutionChainUrl} />
       )}
     </Container>
   );
